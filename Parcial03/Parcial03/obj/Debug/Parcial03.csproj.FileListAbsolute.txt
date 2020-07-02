@@ -1,0 +1,8 @@
+C:\Users\Mario\Desktop\POO-2020\POOF_00309119\Parcial03\Parcial03\bin\Debug\Parcial03.exe.config
+C:\Users\Mario\Desktop\POO-2020\POOF_00309119\Parcial03\Parcial03\bin\Debug\Parcial03.exe
+C:\Users\Mario\Desktop\POO-2020\POOF_00309119\Parcial03\Parcial03\bin\Debug\Parcial03.pdb
+C:\Users\Mario\Desktop\POO-2020\POOF_00309119\Parcial03\Parcial03\obj\Debug\Parcial03.csprojAssemblyReference.cache
+C:\Users\Mario\Desktop\POO-2020\POOF_00309119\Parcial03\Parcial03\obj\Debug\Parcial03.Properties.Resources.resources
+C:\Users\Mario\Desktop\POO-2020\POOF_00309119\Parcial03\Parcial03\obj\Debug\Parcial03.csproj.GenerateResource.cache
+C:\Users\Mario\Desktop\POO-2020\POOF_00309119\Parcial03\Parcial03\obj\Debug\Parcial03.exe
+C:\Users\Mario\Desktop\POO-2020\POOF_00309119\Parcial03\Parcial03\obj\Debug\Parcial03.pdb
