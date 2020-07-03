@@ -1,0 +1,72 @@
+
+CREATE DATABASE "Parcial3"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_United States.1252'
+    LC_CTYPE = 'English_United States.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+
+CREATE TABLE public.departamento
+(
+    "idDepartamento" integer NOT NULL DEFAULT nextval('"departamento_idDepartamento_seq"'::regclass),
+    nombre character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    ubicacion character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT departamento_pkey PRIMARY KEY ("idDepartamento")
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.departamento
+    OWNER to postgres;
+
+
+CREATE TABLE public.registro
+(
+    "idRegistro" integer NOT NULL DEFAULT nextval('"registro_idRegistro_seq"'::regclass),
+    "idUsuario" character(9) COLLATE pg_catalog."default" NOT NULL,
+    fechayhora date NOT NULL,
+    temperatura integer NOT NULL,
+    entrada boolean NOT NULL,
+    CONSTRAINT registro_pkey PRIMARY KEY ("idRegistro"),
+    CONSTRAINT "registro_idUsuario_fkey" FOREIGN KEY ("idUsuario")
+        REFERENCES public.usuario ("idUsuario") MATCH SIMPLE
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.registro
+    OWNER to postgres;
+
+CREATE TABLE public.usuario
+(
+    "idUsuario" character(8) COLLATE pg_catalog."default" NOT NULL,
+    "idDepartamento" integer NOT NULL DEFAULT nextval('"usuario_idDepartamento_seq"'::regclass),
+    "contraseña" character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    nombre character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    apellido character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    dui character(9) COLLATE pg_catalog."default" NOT NULL,
+    "fechaNacimiento" date NOT NULL,
+    CONSTRAINT usuario_pkey PRIMARY KEY ("idUsuario"),
+    CONSTRAINT "usuario_idDepartamento_fkey" FOREIGN KEY ("idDepartamento")
+        REFERENCES public.departamento ("idDepartamento") MATCH SIMPLE
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.usuario
+    OWNER to postgres;
+
+******************SE INSERTARON 3 DEPARTAMENTOS MANUALMENTE(DESDE LA BD)***********************
+insert into departamento (nombre, ubicacion) values ('Administración', 'Edificio Central')
+insert into departamento (nombre, ubicacion) values ('Vigilancia', 'Edificio de Seguridad')
+insert into departamento (nombre, ubicacion) values ('General', 'Edificio General')
+
+*****************SE INSERTO UN USUARIO COMO ADMINISTRADOR**************************************
+insert into usuario ("idUsuario", "idDepartamento", "contraseña", "nombre", apellido, dui, fechaNacimiento) values 
+('00309119', '1', 'admin', 'Mario', 'Cálix', '000000123', '1994-08-14' )

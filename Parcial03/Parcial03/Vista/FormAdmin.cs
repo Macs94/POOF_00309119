@@ -29,9 +29,9 @@ namespace Parcial03
             lblAdmin.Text = "Bienvenido " + usuario.nombre;
             lblAdmin.TextAlign = ContentAlignment.MiddleLeft;
             lblAdmin.Font = new Font("Microsoft Sans Serif", 12);
+            LoadLabels();
             Actualizar = poblarControles;
             Actualizar += actualizartablas;
-            Actualizar += LoadLabels;
             Actualizar.Invoke();
 
         }
@@ -94,7 +94,7 @@ namespace Parcial03
             try
             {
                 UsuarioDAO.eliminar(cmbCarnet.Text);
-                MessageBox.Show("Usuario eliminado exitosamente", "JUMBO - Bottled coffee",
+                MessageBox.Show("Usuario eliminado exitosamente", "Departamento de Administración-Edificio Central",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Actualizar.Invoke();
             }

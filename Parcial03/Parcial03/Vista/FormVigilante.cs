@@ -83,7 +83,7 @@ namespace Parcial03
         private void btnSalida_Click(object sender, EventArgs e)
         {
             Registro r = new Registro();
-            r.idUsuario = (string) cmbCarnet1.SelectedValue;
+            r.idUsuario = (string) cmbCarnet2.SelectedValue;
             r.fechahora = dateTimePicker1.Value;
             r.temperatura = Convert.ToInt32(txtTemp1.Text);
             r.entrada = false;
