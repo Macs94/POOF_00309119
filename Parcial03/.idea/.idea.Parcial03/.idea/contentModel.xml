@@ -8,9 +8,19 @@
       <e p="Parcial03" t="IncludeRecursive">
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Form1.cs" t="Include" />
-        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Controlador" t="Include">
+          <e p="ConneccionDB.cs" t="Include" />
+          <e p="DepartamentoDAO.cs" t="Include" />
+          <e p="RegistroDAO.cs" t="Include" />
+          <e p="UsuarioDAO.cs" t="Include" />
+        </e>
+        <e p="Modelo" t="Include">
+          <e p="Departamento.cs" t="Include" />
+          <e p="Registro.cs" t="Include" />
+          <e p="Usuario.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Parcial03.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -19,6 +29,20 @@
           <e p="Resources.resx" t="Include" />
           <e p="Settings.Designer.cs" t="Include" />
           <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Vista" t="Include">
+          <e p="FormAdmin.cs" t="Include" />
+          <e p="FormAdmin.Designer.cs" t="Include" />
+          <e p="FormAdmin.resx" t="Include" />
+          <e p="FormGeneral.cs" t="Include" />
+          <e p="FormGeneral.Designer.cs" t="Include" />
+          <e p="FormGeneral.resx" t="Include" />
+          <e p="FormVigilante.cs" t="Include" />
+          <e p="FormVigilante.Designer.cs" t="Include" />
+          <e p="FormVigilante.resx" t="Include" />
+          <e p="InicioSesión.cs" t="Include" />
+          <e p="InicioSesión.Designer.cs" t="Include" />
+          <e p="InicioSesión.resx" t="Include" />
         </e>
       </e>
       <e p="Parcial03.sln" t="IncludeFlat" />
