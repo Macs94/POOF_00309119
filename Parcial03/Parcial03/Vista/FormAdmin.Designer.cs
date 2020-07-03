@@ -65,10 +65,10 @@ namespace Parcial03
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.lblAdmin = new System.Windows.Forms.Label();
             this.btnRegreso = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -85,7 +85,6 @@ namespace Parcial03
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView2)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -543,7 +542,7 @@ namespace Parcial03
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Size = new System.Drawing.Size(1286, 680);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Departamento mas concurrido";
+            this.tabPage4.Text = "Temperaturas mas altas";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel7
@@ -553,19 +552,49 @@ namespace Parcial03
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.label11, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.label10, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.dataGridView3, 0, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 2);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 2;
+            this.tableLayoutPanel7.RowCount = 6;
             this.tableLayoutPanel7.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel7.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tableLayoutPanel7.RowStyles.Add(
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tableLayoutPanel7.RowStyles.Add(
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tableLayoutPanel7.RowStyles.Add(
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tableLayoutPanel7.RowStyles.Add(
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.18182F));
+            this.tableLayoutPanel7.RowStyles.Add(
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(1280, 676);
             this.tableLayoutPanel7.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label11.Location = new System.Drawing.Point(643, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(634, 61);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Temperatura:";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label10.Location = new System.Drawing.Point(3, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(634, 61);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Empleado:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblAdmin
             // 
@@ -588,28 +617,6 @@ namespace Parcial03
             this.btnRegreso.Text = "Regresar";
             this.btnRegreso.UseVisualStyleBackColor = true;
             this.btnRegreso.Click += new System.EventHandler(this.btnRegreso_Click);
-            // 
-            // label10
-            // 
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Location = new System.Drawing.Point(3, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(634, 67);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Departamento con mas registros:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode =
-                System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel7.SetColumnSpan(this.dataGridView3, 2);
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 70);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 28;
-            this.dataGridView3.Size = new System.Drawing.Size(1274, 603);
-            this.dataGridView3.TabIndex = 1;
             // 
             // FormAdmin
             // 
@@ -638,7 +645,6 @@ namespace Parcial03
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
         }
 
@@ -681,6 +687,6 @@ namespace Parcial03
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Label label11;
     }
 }
